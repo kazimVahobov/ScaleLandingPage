@@ -9,13 +9,22 @@ import {ServicesPageComponent} from './services-page/services-page.component';
 import {WorkflowPageComponent} from './workflow-page/workflow-page.component';
 import {ProjectsPageComponent} from './projects-page/projects-page.component';
 import {TeamPageComponent} from './team-page/team-page.component';
+import {SharedModule} from '../../shared/shared.module';
 
 
 @NgModule({
-  declarations: [MainPageComponent, PreloadPageComponent, AboutPageComponent, ServicesPageComponent, WorkflowPageComponent, ProjectsPageComponent, TeamPageComponent],
+  declarations: [
+    MainPageComponent,
+    PreloadPageComponent,
+    AboutPageComponent,
+    ServicesPageComponent,
+    WorkflowPageComponent,
+    ProjectsPageComponent,
+    TeamPageComponent],
   imports: [
     CommonModule,
-    MainPageRoutingModule
+    MainPageRoutingModule,
+    SharedModule
   ]
 })
 export class MainPageModule {

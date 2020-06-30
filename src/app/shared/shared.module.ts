@@ -4,12 +4,21 @@ import {LogoSocialComponent} from './logo-social/logo-social.component';
 import {NavigationComponent} from './navigation/navigation.component';
 import {LangSwitchComponent} from './lang-switch/lang-switch.component';
 import {FeedbackComponent} from './feedback/feedback.component';
+import {TranslateModule} from '@ngx-translate/core';
 
 
 @NgModule({
-  declarations: [LogoSocialComponent, NavigationComponent, LangSwitchComponent, FeedbackComponent],
+  declarations: [
+    LogoSocialComponent,
+    NavigationComponent,
+    LangSwitchComponent,
+    FeedbackComponent],
   imports: [
-    CommonModule
+    CommonModule,
+    TranslateModule
+  ],
+  exports: [
+    TranslateModule
   ]
 })
 export class SharedModule {
