@@ -1,4 +1,4 @@
-import {Component} from '@angular/core';
+import {Component, EventEmitter, HostListener, OnInit, Output} from '@angular/core';
 import {animate, state, style, transition, trigger} from '@angular/animations';
 
 @Component({
@@ -29,9 +29,9 @@ import {animate, state, style, transition, trigger} from '@angular/animations';
         bottom: '-75%'
       })),
       state('final', style({
-        bottom: '15%',
+        bottom: '0%',
       })),
-      transition('initial=>final', animate('1500ms'))
+      transition('initial=>final', animate('2000ms'))
     ]),
     trigger('changePositionOfTitle', [
       state('initial', style({
@@ -40,11 +40,13 @@ import {animate, state, style, transition, trigger} from '@angular/animations';
       state('final', style({
         position: 'relative'
       })),
-      transition('initial=>final', animate('50ms'))
+      transition('initial=>final', animate('0ms'))
     ]),
   ]
 })
-export class PreloadPageComponent {
+export class PreloadPageComponent implements OnInit {
+
+  @Output() onScrollToTop = new EventEmitter();
 
   increaseLogoState = 'initial';
   hideOnTopLogoState = 'initial';
@@ -70,11 +72,18 @@ export class PreloadPageComponent {
   changeTitlePositionTitle() {
     setTimeout(() => {
       this.changePositionOfTitleState = 'final';
-    }, 1500);
+    }, 500);
   }
 
   ngOnInit(): void {
     this.increaseLogo();
+  }
+
+  @HostListener('window:scroll', [])
+  onScroll(): void {
+    if (window.scrollY >= 95 && window.scrollY <= 105) {
+      this.onScrollToTop.emit();
+    }
   }
 
 }

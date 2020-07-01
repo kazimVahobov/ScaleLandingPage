@@ -4,7 +4,6 @@ import {RoutesEnum} from '../../core/constants/routes.enum';
 import {MainPageComponent} from './main-page.component';
 import {PreloadPageComponent} from './preload-page/preload-page.component';
 
-
 const routes: Routes = [
   {
     path: RoutesEnum.EMPTY_ROUTE, component: MainPageComponent, children: [

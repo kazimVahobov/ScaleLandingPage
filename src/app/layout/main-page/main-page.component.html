@@ -9,7 +9,10 @@
           <app-lang-switch [isWhite]="true"></app-lang-switch>
         </div>
         <div class="col-12">
-          <router-outlet></router-outlet>
+          <app-preload-page (onScrollToTop)="onPreloadPageScroll($event)"></app-preload-page>
+          <div id="aboutPage" #aboutPage>
+            <app-about-page></app-about-page>
+          </div>
         </div>
       </div>
     </div>
