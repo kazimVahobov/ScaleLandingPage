@@ -1,0 +1,32 @@
+@import 'varialables';
+
+.centered {
+  position: fixed; /* or absolute */
+  top: 50%;
+  left: 50%;
+}
+
+.title-shell {
+  position: fixed;
+  bottom: -75%;
+}
+
+.main-title {
+  font-family: $gilroy-font;
+  font-size: 160px;
+  line-height: 1em;
+  font-weight: bold;
+  alignment: left;
+  vertical-align: center;
+  color: #ffffff;
+}
+
+.main-subtitle {
+  font-family: $gilroy-font;
+  font-size: 50px;
+  line-height: 1em;
+  font-weight: bold;
+  alignment: left;
+  vertical-align: center;
+  color: #ffffff;
+}

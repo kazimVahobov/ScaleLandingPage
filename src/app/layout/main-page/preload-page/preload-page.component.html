@@ -1,1 +1,15 @@
-<p>preload-page works!</p>
+<div>
+  <div>
+    <img [@changeLogoSize]=increaseLogoState [@hideOnTopLogo]=hideOnTopLogoState class="centered"
+         src="./../../assets/images/logo-white.svg">
+  </div>
+  <div class="title-shell" [@showFromBottomTitle]=showFromBottomTitleState
+       [@changePositionOfTitle]=changePositionOfTitleState>
+    <p class="main-title">{{'ARCHITECTURE_COMPANY'| translate}}</p>
+    <hr>
+    <p class="main-subtitle">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum, ea nostrum odit pariatur perferendis quam quidem
+      tempora temporibus vitae.
+    </p>
+  </div>
+</div>
