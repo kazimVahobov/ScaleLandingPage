@@ -1,3 +1,10 @@
 {
-
+  "NAV_ITEM": {
+    "ABOUT_COMPANY": "О компании",
+    "SERVICES": "Сервисы",
+    "WORKFLOW": "Как мы работаем",
+    "PROJECTS": "Проекты",
+    "TEAM": "Наша команда",
+    "CONTACTS": "Контакты"
+  }
 }

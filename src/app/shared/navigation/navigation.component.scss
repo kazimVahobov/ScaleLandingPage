@@ -1,0 +1,10 @@
+@import 'varialables';
+
+.sidebar {
+  padding-top: $main-padding-top;
+  left: 0;
+  top: 0;
+  position: sticky;
+  overflow: hidden;
+  height: 100vh;
+}

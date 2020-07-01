@@ -1,4 +1,4 @@
-import {Component, OnInit} from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-logo-social',
@@ -6,6 +6,8 @@ import {Component, OnInit} from '@angular/core';
   styleUrls: ['./logo-social.component.scss']
 })
 export class LogoSocialComponent implements OnInit {
+
+  @Input() isWhite: boolean;
 
   constructor() {
   }

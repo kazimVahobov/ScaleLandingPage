@@ -1,0 +1,30 @@
+@import 'varialables';
+
+.main-body {
+  padding-left: $main-padding-left;
+
+  background: url("./../../../assets/images/main_page_bg.png");
+  min-height: 100vh;
+
+  .sidebar {
+    padding-top: $main-padding-top;
+    left: 0;
+    top: 0;
+    position: sticky;
+    overflow: hidden;
+    height: 100vh;
+  }
+
+  .content-container {
+
+  }
+
+  .navbar {
+    padding-top: $main-padding-top;
+  }
+}
+
+app-logo-social {
+  position: fixed;
+  bottom: 0;
+}

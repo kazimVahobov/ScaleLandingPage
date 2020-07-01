@@ -1,3 +1,10 @@
 {
-
+  "NAV_ITEM": {
+    "ABOUT_COMPANY": "About Company",
+    "SERVICES": "Services",
+    "WORKFLOW": "How we work",
+    "PROJECTS": "Projects",
+    "TEAM": "Our team",
+    "CONTACTS": "Contacts"
+  }
 }

@@ -1,1 +1,33 @@
-<p>logo-social works!</p>
+<div class="shell" *ngIf="isWhite else blackLogo">
+  <div class="m-3">
+    <a href="#">
+      <img class="increase-animate" src="./../../assets/images/logo-white.svg">
+    </a>
+  </div>
+  <div style="display: flex; justify-content: center">
+    <a href="#" class="increase-animate">
+      <img src="./../../assets/images/insta-white.svg" class="mr-2">
+    </a>
+    <a href="#" class="increase-animate">
+      <img src="./../../assets/images/facebook-white.svg">
+    </a>
+  </div>
+</div>
+
+<ng-template #blackLogo>
+  <div class="shell">
+    <div class="m-3">
+      <a href="#">
+        <img class="increase-animate" src="./../../assets/images/logo-black.svg">
+      </a>
+    </div>
+    <div style="display: flex; justify-content: center">
+      <a href="#" class="increase-animate">
+        <img src="./../../assets/images/insta-black.svg" class="mr-2">
+      </a>
+      <a href="#" class="increase-animate">
+        <img src="./../../assets/images/facebook-black.svg">
+      </a>
+    </div>
+  </div>
+</ng-template>

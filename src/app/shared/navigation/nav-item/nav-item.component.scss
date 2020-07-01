@@ -1,0 +1,17 @@
+@import 'varialables';
+
+a {
+  font-family: $gilroy-font;
+  font-style: normal;
+  color: #000000;
+  font-size: 30px;
+}
+
+.animated-link-black:after {
+  background: #000000 !important;
+}
+
+.is-white {
+  color: #ffffff !important;
+}
+

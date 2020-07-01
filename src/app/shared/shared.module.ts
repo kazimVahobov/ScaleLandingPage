@@ -5,6 +5,7 @@ import {NavigationComponent} from './navigation/navigation.component';
 import {LangSwitchComponent} from './lang-switch/lang-switch.component';
 import {FeedbackComponent} from './feedback/feedback.component';
 import {TranslateModule} from '@ngx-translate/core';
+import { NavItemComponent } from './navigation/nav-item/nav-item.component';
 
 
 @NgModule({
@@ -12,13 +13,23 @@ import {TranslateModule} from '@ngx-translate/core';
     LogoSocialComponent,
     NavigationComponent,
     LangSwitchComponent,
-    FeedbackComponent],
+    FeedbackComponent,
+    NavItemComponent
+  ],
   imports: [
     CommonModule,
     TranslateModule
   ],
   exports: [
-    TranslateModule
+    TranslateModule,
+    LogoSocialComponent,
+    NavigationComponent,
+    LangSwitchComponent,
+    FeedbackComponent
+  ],
+  entryComponents: [
+    NavigationComponent,
+    LogoSocialComponent
   ]
 })
 export class SharedModule {

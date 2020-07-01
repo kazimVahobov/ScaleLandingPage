@@ -1,1 +1,8 @@
-<p>navigation works!</p>
+<div class="sidebar sticky-top">
+  <ul class="nav flex-column">
+    <li class="nav-item" *ngFor="let item of menuItems; let inx = index">
+      <app-nav-item [item]="item" [isWhite]="true" [isActive]="inx == 0"></app-nav-item>
+    </li>
+  </ul>
+  <app-logo-social [isWhite]="true"></app-logo-social>
+</div>
