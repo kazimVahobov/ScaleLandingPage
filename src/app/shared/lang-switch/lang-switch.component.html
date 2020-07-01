@@ -1,1 +1,4 @@
-<p>lang-switch works!</p>
+<nav class="navbar navbar-expand-lg float-right">
+  <a (click)="setLang(ruLang)" class="mr-2" [ngClass]="{'is-white': isWhite, 'active-lang': isSelectedLang(ruLang)}">Ru</a>
+  <a (click)="setLang(engLang)" [ngClass]="{'is-white': isWhite, 'active-lang': isSelectedLang(engLang)}">En</a>
+</nav>

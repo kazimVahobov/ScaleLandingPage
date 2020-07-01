@@ -11,5 +11,6 @@ export class AppComponent {
   constructor(translate: TranslateService) {
     const lang = localStorage.getItem(ConstantsEnum.LANG_KEY) ? localStorage.getItem(ConstantsEnum.LANG_KEY) : ConstantsEnum.LANG_EN;
     translate.setDefaultLang(lang);
+    localStorage.setItem(ConstantsEnum.LANG_KEY, lang);
   }
 }

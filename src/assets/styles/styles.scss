@@ -23,11 +23,19 @@ html, body {
   left: 0;
 }
 
+.animated-link-black:after {
+  background: #000000 !important;
+}
+
 .increase-animate {
   transition: 0.5s; /* Время эффекта */
   &:hover {
     transform: scale(1.2); /* Увеличиваем масштаб */
   }
+}
+
+.is-black-font {
+  color: #000000 !important;
 }
 
 .red-border {

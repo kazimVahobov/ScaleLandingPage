@@ -1,0 +1,46 @@
+@import 'varialables';
+
+.navbar {
+  padding-top: $main-padding-top;
+}
+
+a {
+  font-family: $gilroy-font;
+  font-style: normal;
+  color: #000000;
+  border-bottom: 1px solid #000000;
+  font-size: 20px;
+  padding: 4px 6px;
+  display: inline-block;
+  background: none;
+  -webkit-transition: background 1s; /* For Safari 3.0 to 6.0 */
+  transition: background 1s; /* For modern browsers */
+  cursor: pointer;
+
+  &:hover {
+    text-decoration: none;
+    color: #ffffff;
+    background: #000000;
+  }
+}
+
+.active-lang {
+  color: #ffffff !important;
+  background: #000000 !important;
+}
+
+.is-white {
+  color: #ffffff !important;
+  border-bottom: 1px solid #ffffff !important;
+
+  &:hover {
+    text-decoration: none;
+    color: #000000 !important;
+    background: #ffffff !important;
+  }
+}
+
+.active-lang.is-white {
+  color: #000000 !important;
+  background: #ffffff !important;
+}

@@ -29,6 +29,7 @@ import { NavItemComponent } from './navigation/nav-item/nav-item.component';
   ],
   entryComponents: [
     NavigationComponent,
+    LangSwitchComponent,
     LogoSocialComponent
   ]
 })
